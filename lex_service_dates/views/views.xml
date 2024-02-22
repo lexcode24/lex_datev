@@ -1,0 +1,21 @@
+<odoo>
+
+    <!-- Vendor bills inherit -->
+    <record id="view_move_form_inherit_lex_sevice_dates" model="ir.ui.view">
+        <field name="name">vie_move_form.inherit_lex_service_dates</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Add service_dates fields after invoice date -->
+            <field name="invoice_date" position="after">
+                <label for="servicedate_from" string="Servicedaterange"/>
+                <div class="o_row">
+                    <field name="servicedate_from" widget="daterange" nolabel="1" class="oe_inline" options="{'related_end_date': 'servicedate_to'}"/>
+                    <i class="fa fa-long-arrow-right mx-2" aria-label="Arrow icon" title="Arrow"/>
+                    <field name="servicedate_to" widget="daterange" nolabel="1" class="oe_inline" options="{'related_start_date': 'servicedate_from'}"/>
+                </div>
+            </field>
+        </field>
+    </record>
+</odoo>
