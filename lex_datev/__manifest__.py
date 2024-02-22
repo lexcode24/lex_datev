@@ -25,5 +25,5 @@
     'data': [
         'data/datev_sequences.xml',
     ],
-    'license': 'LGPL-3',
+    'license': 'OPL-1',
 }

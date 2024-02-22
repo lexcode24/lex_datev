@@ -28,5 +28,5 @@
         'views/views.xml',
         'views/templates.xml',
     ],
-    'license': 'AGPL-3',
+    'license': 'OPL-1',
 }
