@@ -26,4 +26,6 @@
         'data/datev_sequences.xml',
     ],
     'license': 'OPL-1',
+    'price': 199.99,
+    'currency': 'EUR',
 }

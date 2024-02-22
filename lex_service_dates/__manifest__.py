@@ -29,4 +29,6 @@
         'views/templates.xml',
     ],
     'license': 'OPL-1',
+    'price': 199.99,
+    'currency': 'EUR',
 }
