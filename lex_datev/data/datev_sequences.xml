@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Automatische Nummer-Erzeugung für Debitoren -->
+        <record id="sequence_datev_debitor" model="ir.sequence">
+            <field name="name">Kreditorennummer</field>
+            <field name="code">sequence.l10n_de_datev_identifier</field>
+            <field name="active">True</field>
+            <field name="prefix"></field>
+            <field name="padding">5</field>
+            <field name="number_next">70000</field>
+            <field name="number_increment">1</field>
+            <field name="suffix"></field>
+        </record>
+        
+        <!-- Automatische Nummer-Erzeugung für Kreditoren -->
+        <record id="sequence_datev_payable" model="ir.sequence">
+            <field name="name">Debitorennummer</field>
+            <field name="code">sequence.l10n_de_datev_identifier_customer</field>
+            <field name="active">True</field>
+            <field name="prefix"></field>
+            <field name="padding">5</field>
+            <field name="number_next">10000</field>
+            <field name="number_increment">1</field>
+            <field name="suffix"></field>
+        </record>
+    </data>
+</odoo>
